@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/6408aea541.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+    </style>
+    <script>
+        // launch on page load
+        $(document).ready(function () {
+            $("#welcomeSection").modal('show');
+        });
+    </script>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <!-- Welcome section Modal -->
+    <div class="modal fade" id="welcomeSection" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-body welcomeBG">
+                    <div class="container-fluid" style="height: 100vh;">
+                        <div class="h-100 row align-items-center text-center">
+                            <div><svg class="mb-3" style="overflow: visible;" height="28vh" version="1.1" id="Group_2"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    x="0px" y="0px" viewBox="0 0 663 230.1" style="enable-background:new 0 0 663 230.1;"
+                                    xml:space="preserve">
+                                    <g id="Group_1_00000021093899282721080860000017885283302359522489_">
+                                        <path class="letters" fill="#ffffff"
+                                            id="Path_2_00000109020473984320206030000010209239731408359044_" d="M126.6,149.5c0,31.4-20.7,58.4-64.4,58.4
+		C22.1,207.9,0,182.3,0,149.7c0-30.6,21.5-58,63.9-58C104,91.7,126.6,118,126.6,149.5 M38,149.2c0,19.3,7.7,33.7,25.9,33.7
+		c18.7,0,24.6-16.4,24.6-33c0-19.3-6.8-33.5-25.6-33.5C45.1,116.3,38,131,38,149.2 M102.1,188.7l31,20.7l-18,20.7l-41.7-27.6
+		L102.1,188.7z" />
+
+                                        <path class="letters" fill="#ffffff"
+                                            id="Path_3_00000142880283412212548630000009187955721485396916_" d="M173,94.2v64.3c0,17.7,8.5,23.5,20.4,23.5
+		c12.5,0,19.1-6.5,19.1-23.5V94.2h36.2v64.5c0,32.3-18,49.2-56.1,49.2c-36.8,0-55.7-16-55.7-49.2V94.2H173z" />
+
+                                        <rect class="letters" fill="#ffffff"
+                                            id="Rectangle_5_00000106836805420266426580000011923085724591772040_"
+                                            x="265.3" y="132.5" width="36.2" height="72.9" />
+
+                                        <path class="letters" fill="#ffffff"
+                                            id="Path_4_00000135666803313212030070000011044735595112882860_" d="M311.3,183.3l61.7-63.7h-58.7V94.2H418v24.5l-60.5,61.4
+		h66.4l-3.9,25.3H311.4v-22.1H311.3z" />
+
+                                        <path class="letters" fill="#ffffff"
+                                            id="Path_5_00000082357083730949071260000013428497093923143580_" d="M426.8,183.3l61.7-63.7h-58.7V94.2h103.7v24.5
+		l-60.6,61.4h66.4l-3.9,25.3H426.8V183.3z" />
+
+                                        <path class="letters" fill="#ffffff"
+                                            id="Path_6_00000090277762317129141420000006085253882949725320_" d="M580.3,205.4v-38.5c0-1.8-0.5-2.6-1.6-4.3L534,94.2h42.4
+		c8.9,16,18.3,32.8,23.7,44.6c5.3-11.4,15-27.8,24.1-44.6H663l-45.6,69.4c-0.7,1.2-1,2.5-0.9,3.8v37.9L580.3,205.4z" />
+
+                                        <path class="bulb" fill="#ffffff"
+                                            id="Path_7_00000023986591530837773710000002086077491057216667_" d="M265.4,102.5c0,1.4,0.4,2.8,1.2,4l3.9,5.8
+		c1.3,2,3.6,3.2,6,3.2h13.9c2.4,0,4.7-1.2,6-3.2l3.9-5.8c0.8-1.2,1.2-2.6,1.2-4v-8.6h-36.1V102.5z M243.7,39.7
+		c0,9.6,3.5,18.9,9.8,26.1c3.7,4.2,9.5,13.1,11.8,20.6c0,0.1,0,0.1,0,0.2h36.1c0-0.1,0-0.1,0-0.2c2.2-7.5,8-16.4,11.8-20.6
+		c14.4-16.5,12.7-41.6-3.8-56s-41.6-12.7-56,3.8C247.2,20.9,243.7,30.1,243.7,39.7" />
+                                    </g>
+                                </svg>
+                                <div class="d-flex justify-content-center mb-3 ">
+                                    <div class=" col-3 mt-3">
+                                        <input type="text" class="form-control pill text-center" id="userInput"
+                                            placeholder="Enter your Name" value="Guest">
+                                    </div>
+                                </div>
+                                <button type="button" class="btn mb-1 w-25 text-white pill letsGoPill"
+                                    data-bs-dismiss="modal" onclick="usernameSave()">Let's Go!</button>
+                                <p class="mt-2 highlight" id="whatIsQ">What is Quizzy?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark welcomeBG">
+        <div class="container-fluid">
+            <a class="navbar-brand mb-2 ms-2 me-4 " href="#">
+                <img src="images/quizzy logo.svg">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style="text-decoration: none;">
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#">Categories</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link mt-2 me-2" href="#"><i class="fas fa-share-square  fa-lg"></i></a>
+                    </li>
+                    <li class="nav-item me-auto bgWhite rounded-pill" data-bs-toggle="modal"
+                        data-bs-target="#welcomeSection">
+                        <a class="nav-link mt-1" style="color: black;" id="username" href="#" tabindex="-1"><b
+                                class="ms-2 me-2 ">Hello there placeholder</b></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid  w-100">
+        <div class="row mt-3 mb-1">
+            <div class="text-center">
+                <h1 class=" ">Let's Play!</h1>
+                <h5 class=" mt-4 ">Choose a vehicle below.</h5>
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <div id="bikeBtn" class="card mt-3 mb-3 ms-3 me-3   border-0"
+                    style="width: 30rem; height: rem; transform: rotate(0);">
+                    <a href="#" class=" bikeBG boxShadow roundedBorder stretched-link text-decoration-none text-white"
+                        data-bs-toggle="modal" data-bs-target="#quizSection">
+                        <div class="statusIcon mb-4">
+                            <i class="text-white fas fa-play-circle fa-3x"></i>
+                        </div>
+                        <div class="card-body ">
+                            <h2 class="card-title">Bicycle</h2>
+                            <p class="card-text">Level 1</p>
+                            <div class="text-end pe-1">
+                                <img height="210vh" src="images/bike svg/bike.svg">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <div id="lockLevelPlane" class="card mt-3 mb-3 ms-3 me-3   border-0"
+                    style="width: 30rem; height: rem; transform: rotate(0);">
+                    <a href="#" id="lockLevelPlaneOpacity"
+                        class="lockedCard opacity-50 boxShadow planeBG roundedBorder stretched-link text-decoration-none text-white">
+                        <div class="card-body ">
+                            <div class="statusIcon mb-4">
+                                <i class="text-danger fas fa-lock fa-3x" id="lockLevel2"></i>
+                            </div>
+                            <h2 class="card-title">Plane</h2>
+                            <p class="card-text">Level 2</p>
+                            <div class="text-end">
+                                <img height="210vh" src="images/plane/Airplane.svg">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+                <div class="card mt-3 mb-3 ms-3 me-3   border-0"
+                    style="width: 30rem; height: rem; transform: rotate(0);">
+                    <a href="#" id="lockLevelRocket"
+                        class="opacity-50 boxShadow rocketBG roundedBorder stretched-link text-decoration-none text-white">
+                        <div class="card-body ">
+                            <div class="statusIcon mb-4">
+                                <i class="text-danger fas fa-lock fa-3x" id="lockLevel2"></i>
+                            </div>
+                            <h2 class="card-title">Rocket</h2>
+                            <p class="card-text">Level 3</p>
+                            <div class="text-end ">
+                                <img height="210vh" src="images/rocket/Rocket.svg">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class=" text-center text-lg-start mt-auto">
+        <div class="text-center p-2" style="font-size: 12px; background-color: rgb(231, 231, 231);">
+            Copyright 2022 © Quizzy
+        </div>
+    </footer>
+
+    <!-- bike -->
+    <div class="modal fade" id="quizSection" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content ">
+                <nav class="navbar navbar-expand-lg navbar-dark welcomeBG">
+                    <div class="container-fluid">
+                        <a class="navbar-brand mb-2 ms-2 me-4 " href="#">
+                            <img class=" quizzyNav navbar-brand" src="images/quizzy logo.svg">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style="text-decoration: none;">
+                                <li class="nav-item me-3">
+                                    <a class="nav-link" href="#">Categories</a>
+                                </li>
+                                <li class="nav-item me-3">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav ms-auto mb-lg-0 ">
+                                <li class="nav-item">
+                                    <a class="nav-link mt-2 me-2" href="#">
+                                        <i class="fas fa-share-square  fa-lg"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item me-auto exitPill rounded-pill ">
+                                    <a class="nav-link mt-1 text-white " data-bs-dismiss="modal" href="#"
+                                        tabindex="-1">
+                                        <b class="ms-2 me-2 ">
+                                            <i class="pe-2 text-white fas fa-door-open"></i>Exit Quiz
+                                        </b>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="text-center">
+                    <h1 class=" mt-2">Bicycle Quiz</h1>
+                    <h5 class=" mt-3 mb-3">Level 1</h5>
+                </div>
+                <div class="container-fluid mt-2 d-flex w-75">
+                    <div class="col-6 p-5">
+                        <svg class="" style="overflow: visible ;" version="1.1" id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                            y="0px" viewBox="0 0 539.3 335.7" style="enable-background:new 0 0 539.3 335.7;"
+                            xml:space="preserve">
+                            <style type="text/css">
+                                .st0 {
+                                    fill: url(#SVGID_1_);
+                                }
+
+                                .st1 {
+                                    fill: url(#SVGID_00000021839144200196210400000013814599911430996645_);
+                                }
+
+                                .st2 {
+                                    fill: url(#SVGID_00000074439358383813704800000007196626936543277229_);
+                                }
+
+                                .st3 {
+                                    fill: #F69163;
+                                }
+
+                                .st4 {
+                                    fill: url(#SVGID_00000168107279366963049510000013071112184522819209_);
+                                }
+
+                                .st5 {
+                                    fill: url(#SVGID_00000101797851322221243740000006945955038903311522_);
+                                }
+
+                                .st6 {
+                                    fill: #2581C4;
+                                }
+
+                                .st7 {
+                                    fill: #B45126;
+                                }
+
+                                .st8 {
+                                    fill: #8EA5A8;
+                                }
+
+                                .st9 {
+                                    fill: url(#SVGID_00000160885049429490499930000015169122694404690839_);
+                                }
+
+                                .st10 {
+                                    fill: #4B7BBE;
+                                }
+
+                                .st11 {
+                                    fill: url(#SVGID_00000003798334985986642870000009984912707405753986_);
+                                }
+
+                                .st12 {
+                                    fill: url(#SVGID_00000025413547972993647200000011063062226566916016_);
+                                }
+
+                                .st13 {
+                                    fill: url(#SVGID_00000000942641929234602700000014852981316066488247_);
+                                }
+
+                                .st14 {
+                                    fill: #F2F2F2;
+                                }
+
+                                .st15 {
+                                    fill: url(#SVGID_00000176741006865088912150000016578838286524334773_);
+                                }
+
+                                .st16 {
+                                    fill: url(#SVGID_00000092451193040630269970000008725747975711568029_);
+                                }
+
+                                .st17 {
+                                    fill: url(#SVGID_00000144313756873095329290000000500557871688700548_);
+                                }
+
+                                .st18 {
+                                    fill: url(#SVGID_00000021819527958349787010000001155941744177701042_);
+                                }
+
+                                .st19 {
+                                    fill: url(#SVGID_00000011716083638805552610000004025300382298987430_);
+                                }
+
+                                .st20 {
+                                    fill: url(#SVGID_00000058570864828094696460000014925555404874642592_);
+                                }
+
+                                .st21 {
+                                    fill: url(#SVGID_00000084496677652508882430000011750289266794526900_);
+                                }
+
+                                .st22 {
+                                    fill: url(#SVGID_00000134955815422274652030000004298694520728922261_);
+                                }
+
+                                .st23 {
+                                    fill: #010101;
+                                }
+
+                                .st24 {
+                                    fill: url(#SVGID_00000089574505154122608340000011903229362195628700_);
+                                }
+
+                                .st25 {
+                                    fill: url(#SVGID_00000112604122462609016970000017198670263633986963_);
+                                }
+
+                                .st26 {
+                                    fill: url(#SVGID_00000137126618188368687990000002200520601445923235_);
+                                }
+
+                                .st27 {
+                                    fill: url(#SVGID_00000147932521056509315420000008305327770345944745_);
+                                }
+
+                                .st28 {
+                                    fill: url(#SVGID_00000114783238356333039650000012152848276106848702_);
+                                }
+
+                                .st29 {
+                                    fill: #939FA1;
+                                }
+
+                                .st30 {
+                                    fill: #414042;
+                                }
+
+                                .st31 {
+                                    fill: #FEBF10;
+                                }
+
+                                .st32 {
+                                    fill: url(#SVGID_00000101781356645967566150000018322829989206224030_);
+                                }
+
+                                .st33 {
+                                    fill: url(#SVGID_00000126300202639052354550000003898673118507541919_);
+                                }
+                            </style>
+                            <!-- Frame -->
+                            <g class="mt-2" id="frame">
+                                <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="282.3492"
+                                    y1="429.2707" x2="263.8892" y2="470.3007"
+                                    gradientTransform="matrix(1 0 0 1 -36.32 -256.2)">
+                                    <stop offset="0" style="stop-color:#010101" />
+                                    <stop offset="1" style="stop-color:#A9BDBF" />
+                                </linearGradient>
+                                <path class="st0" d="M225.7,192.7h19c2.4,0,4.3,1.9,4.4,4.2s-1.9,4.3-4.2,4.4h-19c-2.4,0-4.3-1.9-4.4-4.2
+C221.4,194.7,223.3,192.8,225.7,192.7C225.7,192.7,225.7,192.7,225.7,192.7z" />
+                                <linearGradient id="SVGID_00000116951462347780644710000001491680132926391940_"
+                                    gradientUnits="userSpaceOnUse" x1="288.3904" y1="491.2898" x2="268.5604"
+                                    y2="446.1498" gradientTransform="matrix(1 0 0 1 -36.32 -256.2)">
+                                    <stop offset="0" style="stop-color:#010101" />
+                                    <stop offset="1" style="stop-color:#A9BDBF" />
+                                </linearGradient>
+                                <path style="fill:url(#SVGID_00000116951462347780644710000001491680132926391940_);"
+                                    d="M254.2,246.5l-22.9-46.9
+c-0.8-1.9,0.1-4.1,2-4.9c1.8-0.7,3.8,0,4.7,1.7l22.8,46.9L254.2,246.5z" />
+                                <linearGradient id="SVGID_00000085243745865010945200000010251002275135956872_"
+                                    gradientUnits="userSpaceOnUse" x1="271.5133" y1="456.8317" x2="264.4133"
+                                    y2="428.3317" gradientTransform="matrix(1 0 0 1 -36.32 -256.2)">
+                                    <stop offset="0" style="stop-color:#8EA5A8" />
+                                    <stop offset="1" style="stop-color:#CFDCDE" />
+                                </linearGradient>
+                                <path style="fill:url(#SVGID_00000085243745865010945200000010251002275135956872_);"
+                                    d="M234.6,200.7c1.4,0,2.5-1.1,2.4-2.5
+s-1.1-2.5-2.5-2.4c-1.4,0-2.5,1.1-2.5,2.5C232.1,199.6,233.2,200.7,234.6,200.7C234.6,200.7,234.6,200.7,234.6,200.7z" />
+                                <path class="st3" d="M258.8,250.4c1.4,0,2.6-1.2,2.6-2.6c0-1.4-1.2-2.6-2.6-2.6c-1.4,0-2.6,1.2-2.6,2.6c0,0,0,0,0,0
+C256.2,249.3,257.4,250.4,258.8,250.4z" />
+                                <linearGradient id="SVGID_00000039099334407055398950000011229798671986323595_"
+                                    gradientUnits="userSpaceOnUse" x1="361.3469" y1="373.1786" x2="388.2069"
+                                    y2="311.9187" gradientTransform="matrix(1 0 0 1 -36.32 -256.2)">
+                                    <stop offset="0.25" style="stop-color:#45B7E9" />
+                                    <stop offset="1" style="stop-color:#495BA9" />
+                                </linearGradient>
+                                <path style="fill:url(#SVGID_00000039099334407055398950000011229798671986323595_);"
+                                    d="M261.7,251.7l-12.9-11.2L357.1,53.3
+L370,64.7L261.7,251.7z" />
+                                <linearGradient id="SVGID_00000142883301179242819060000015458177072536452502_"
+                                    gradientUnits="userSpaceOnUse" x1="261.5887" y1="379.4572" x2="247.2887"
+                                    y2="285.1372" gradientTransform="matrix(1 0 0 1 -36.32 -256.2)">
+                                    <stop offset="0.25" style="stop-color:#45B7E9" />
+                                    <stop offset="1" style="stop-color:#495BA9" />
+                                </linearGradient>
+                                <path style="fill:url(#SVGID_00000142883301179242819060000015458177072536452502_);"
+                                    d="M250.5,243.6l-57-185.1l14.7-2.8
+l56.9,185.1L250.5,243.6z" />
+                                <path class="st6" d="M164.4,19.8c-2.2,1.5-3.4,4-3.3,6.7c0,2,4.5,6.7,10,6.7c5.5,0,11.4-2.7,12.3-8.2
+C184.5,19.7,164.4,19.8,164.4,19.8z" />
+                                <path class="st7"
+                                    d="M209.6,263.6l-12.6-3.3c-0.4,0.8-0.8,1.8-1.2,2.6l12.6,3.3C208.9,265.4,209.3,264.5,209.6,263.6z" />
+                                <path class="st3" d="M258.9,276c-0.8,0-1.6,0-2.5-0.1c-1.2-0.1-2.5-0.3-3.7-0.5l1-4.7c1,0.3,2,0.4,3,0.4c0.7,0,1.4,0.1,2.1,0.1
+c12.2,0,22.4-9.3,23.5-21.4c0.6-6.2-1.4-12.5-5.5-17.2c-4-4.8-9.8-7.8-16-8.4l0.4-4.6c15.6,1.4,27,15.2,25.6,30.8
+C285.5,264.8,273.5,275.9,258.9,276L258.9,276z" />
+                                <path class="st8" d="M267.1,274.9l-10.8-1.2c-48.8-5.6-96.5-17.8-142-36.2l-0.4-0.1l-3-2.9l2.9-3l2.5,2.3
+c45,18.3,92.3,30.3,140.6,35.8l10.8,1.2L267.1,274.9z" />
+                                <path class="st8" d="M114.9,204.2l-0.4,4.1l154.6,16.6l0.4-4.1L114.9,204.2z" />
+                                <linearGradient id="SVGID_00000031907560791140097760000013304222240731037371_"
+                                    gradientUnits="userSpaceOnUse" x1="159.5683" y1="527.0903" x2="148.715"
+                                    y2="460.6405" gradientTransform="matrix(1 0 0 1 -36.32 -256.2)">
+                                    <stop offset="0" style="stop-color:#010101" />
+                                    <stop offset="1" style="stop-color:#A9BDBF" />
+                                </linearGradient>
+                                <path style="fill:url(#SVGID_00000031907560791140097760000013304222240731037371_);"
+                                    d="M115,237.5c9.3,0,16.8-7.5,16.8-16.8
+s-7.5-16.8-16.8-16.8s-16.8,7.5-16.8,16.8c0,0,0,0,0,0C98.2,229.9,105.7,237.5,115,237.5C115,237.5,115,237.5,115,237.5z" />
+                                <path class="st3" d="M115,226.4c3.2,0,5.8-2.6,5.8-5.7c0-3.2-2.6-5.8-5.7-5.8c-3.2,0-5.8,2.6-5.8,5.7c0,0,0,0,0,0
+C109.3,223.8,111.9,226.4,115,226.4z" />
+                                <path class="st10" d="M115,223.8c1.7,0,3.2-1.4,3.2-3.1s-1.4-3.2-3.1-3.2s-3.2,1.4-3.2,3.1c0,0,0,0,0,0
+C111.9,222.4,113.3,223.8,115,223.8z" />
+                                <path class="st6" d="M191.8,54.9l-9-35.2l14.4-2.6l11,42.7L191.8,54.9z" />
+                                <path class="st6" d="M355.9,45.5c-2,0-3.8-1.3-4.5-3.1l-9-26.8c0,0-0.8-3,3.4-4.2c4-1.1,5.5,1.2,5.5,1.2l9,26.8c0.8,2.5-0.6,5.1-3,6
+C357,45.4,356.5,45.5,355.9,45.5z" />
+                                <path class="st6" d="M374.8,10.5h-18.7c-2.3,0-4.2-1.9-4.2-4.2c0-2.3,1.9-4.2,4.2-4.2h18.7c2.3,0,4.2,1.9,4.2,4.2
+C379,8.6,377.1,10.5,374.8,10.5z" />
+                                <linearGradient id="SVGID_00000030465644682425542940000006393682620010932881_"
+                                    gradientUnits="userSpaceOnUse" x1="239.8539" y1="337.1599" x2="235.4839"
+                                    y2="228.9198" gradientTransform="matrix(1 0 0 1 -36.32 -256.2)">
+                                    <stop offset="0" style="stop-color:#3A2512" />
+                                    <stop offset="1" style="stop-color:#F99D1C" />
+                                </linearGradient>
+                                <path style="fill:url(#SVGID_00000030465644682425542940000006393682620010932881_);"
+                                    d="M154.6,17c0-3,1.2-7.8,6.8-7.8
+c20.1,0,21.9,1.5,27.9,1.5c25.7,0,32.1-1.5,44.9-1.5c6.6,0,12.3,2.3,13.1,7.8c0,0-14.2,2.7-20.4,7s-18.5,10.9-29.4,10.9
+S177,24.1,166.8,22C156.8,20,154.6,17,154.6,17z" />
+                                <linearGradient id="SVGID_00000067955064595471386270000001217519448855859094_"
+                                    gradientUnits="userSpaceOnUse" x1="208.1334" y1="337.9489" x2="212.7534"
+                                    y2="310.4289" gradientTransform="matrix(1 0 0 1 -36.32 -256.2)">
+                                    <stop offset="0" style="stop-color:#BD2A26" />
+                                    <stop offset="1" style="stop-color:#F58020" />
+                                </linearGradient>
+                                <path style="fill:url(#SVGID_00000067955064595471386270000001217519448855859094_);"
+                                    d="M176.6,53.9h-3.3v18.3h3.3V53.9z" />
+                                <linearGradient id="SVGID_00000007389714151121164950000010154150432808996029_"
+                                    gradientUnits="userSpaceOnUse" x1="420.15" y1="311.88" x2="420.15" y2="328.76"
+                                    gradientTransform="matrix(1 0 0 1 -36.32 -256.2)">
+                                    <stop offset="0" style="stop-color:#FFFFFF" />
+                                    <stop offset="0.18" style="stop-color:#F9FBFB" />
+                                    <stop offset="0.44" style="stop-color:#E6EBEB" />
+                                    <stop offset="0.74" style="stop-color:#CAD6D6" />
+                                    <stop offset="1" style="stop-color:#A9BDBF" />
+                                </linearGradient>
+                                <path style="fill:url(#SVGID_00000007389714151121164950000010154150432808996029_);"
+                                    d="M385.5,53.9h-3.3v18.3h3.3V53.9z" />
+                                <path class="st14" d="M258.9,251.7c-2.2,0-4-1.8-4-4s1.8-4,4-4s4,1.8,4,4C262.9,249.9,261.1,251.6,258.9,251.7z M258.9,244.3
+c-2,0-3.6,1.6-3.6,3.5s1.6,3.6,3.5,3.6s3.6-1.6,3.6-3.5c0,0,0,0,0,0C262.5,245.9,260.9,244.3,258.9,244.3z" />
+                                <linearGradient id="SVGID_00000036209570338181327630000013416007316905556381_"
+                                    gradientUnits="userSpaceOnUse" x1="184.6412" y1="560.1698" x2="345.3211"
+                                    y2="263.5298" gradientTransform="matrix(1 0 0 1 -36.32 -256.2)">
+                                    <stop offset="0.25" style="stop-color:#45B7E9" />
+                                    <stop offset="0.36" style="stop-color:#49AFE3" />
+                                    <stop offset="0.52" style="stop-color:#4E9AD4" />
+                                    <stop offset="0.7" style="stop-color:#4A7ABD" />
+                                    <stop offset="0.9" style="stop-color:#4962AD" />
+                                    <stop offset="1" style="stop-color:#495BA9" />
+                                </linearGradient>
+                                <path style="fill:url(#SVGID_00000036209570338181327630000013416007316905556381_);"
+                                    d="M127.1,216.5c-4.5-2.7-5.2-4.5-5.2-4.9
+v-0.1l0.6-0.7l1.1-2.9l87.7-145.3l-12.3-9.6l-92.6,153.1c-3.1,3.3-3.8,10-4,12.9c0,7.9,6.6,11.1,10.1,11.6l157,25.8l3-16.4
+L127.1,216.5z" />
+                                <linearGradient id="SVGID_00000139277537970311754650000010672602804540209798_"
+                                    gradientUnits="userSpaceOnUse" x1="406.1172" y1="342.7674" x2="479.9772"
+                                    y2="547.2674" gradientTransform="matrix(1 0 0 1 -36.32 -256.2)">
+                                    <stop offset="0.25" style="stop-color:#45B7E9" />
+                                    <stop offset="1" style="stop-color:#495BA9" />
+                                </linearGradient>
+                                <path style="fill:url(#SVGID_00000139277537970311754650000010672602804540209798_);"
+                                    d="M430.5,216.7l-2.7-2.6
+c-0.7-0.8-0.8-1.1-0.8-1.2c-0.3-1-0.8-2-1.4-2.9c-7.4-11.9-20.6-34.1-26.1-49.4c-2.2-6.1-5.1-18.5-8.2-31.5
+c-4.2-17.8-9-37.9-13.4-48.4l-0.7-1.8l-17.9,5.9l0.7,2.1c3.5,9.8,9,28.7,13.8,45.4c3.3,11.4,6.4,22,8.4,28
+c3.7,11.1,21.7,42.7,30.5,58l1.2,2.2c2.1,3.6,5.6,6.1,9.6,7.1c0.8,0.2,1.6,0.3,2.5,0.3c0.5,0,1,0,1.5-0.1c2.6-0.7,4.5-2.7,5.1-5.3
+C432.7,220.3,432,218.2,430.5,216.7z" />
+                                <path class="st6"
+                                    d="M347,25.3c0,0-2.2,13.1,0.5,18.7s11.5-2.7,11.5-2.7l2.6-2l-9.3-15.3L347,25.3z" />
+                                <linearGradient id="SVGID_00000162329431590305698040000006942552094996626323_"
+                                    gradientUnits="userSpaceOnUse" x1="393.4417" y1="300.4099" x2="394.5817"
+                                    y2="325.2599" gradientTransform="matrix(1 0 0 1 -36.32 -256.2)">
+                                    <stop offset="0.25" style="stop-color:#45B7E9" />
+                                    <stop offset="1" style="stop-color:#495BA9" />
+                                </linearGradient>
+                                <path style="fill:url(#SVGID_00000162329431590305698040000006942552094996626323_);"
+                                    d="M363,36.8l-20.2,5.9l7.8,20.1h1.4
+c5.7,0,11.5,0.5,17.1,1.5l3.3,0.5L363,36.8z" />
+                                <linearGradient id="SVGID_00000033366044213741452330000013925665261704999612_"
+                                    gradientUnits="userSpaceOnUse" x1="403.4911" y1="345.1698" x2="399.3911"
+                                    y2="323.6298" gradientTransform="matrix(1 0 0 1 -36.32 -256.2)">
+                                    <stop offset="0.25" style="stop-color:#45B7E9" />
+                                    <stop offset="1" style="stop-color:#495BA9" />
+                                </linearGradient>
+                                <path style="fill:url(#SVGID_00000033366044213741452330000013925665261704999612_);"
+                                    d="M371,60.5l-1.2-0.1
+c-5.9-0.9-11.8-1.4-17.8-1.5h-3l11.6,30.1l17.9-6L371,60.5z" />
+                                <path class="st6" d="M361.8,23.9h-0.4c-1-0.2-1.7-1.2-1.5-2.2c0,0,0-0.1,0-0.1c1.1-5.5,6.1-10.3,9.7-13.3l-1.8-0.3
+c-1.1-0.2-1.8-1.1-1.6-2.2c0.2-1.1,1.1-1.8,2.2-1.6l0,0l6.7,1c0.8,0.1,1.5,0.7,1.6,1.5c0.2,0.8-0.2,1.7-1,2c-0.1,0-10.7,6.7-12,13.5
+C363.6,23.3,362.8,24,361.8,23.9z" />
+                                <path class="st6" d="M347.6,20.1c-1.5,0-2.9-0.8-3.6-2.2c-0.9-1.9-0.1-4.3,1.8-5.2l20.5-10c1.9-0.9,4.3-0.1,5.2,1.8
+c0.9,1.9,0.1,4.3-1.8,5.2l-20.5,10C348.7,20,348.1,20.1,347.6,20.1z" />
+                                <linearGradient id="SVGID_00000092455653199712411790000005490801273314922416_"
+                                    gradientUnits="userSpaceOnUse" x1="225.4447" y1="648.0523" x2="324.8447"
+                                    y2="442.8723" gradientTransform="matrix(1 0 0 1 -36.32 -256.2)">
+                                    <stop offset="0" style="stop-color:#010101" />
+                                    <stop offset="1" style="stop-color:#A9BDBF" />
+                                </linearGradient>
+                                <path style="fill:url(#SVGID_00000092455653199712411790000005490801273314922416_);"
+                                    d="M258.9,276.2c15.7,0,28.5-12.7,28.5-28.5
+c0-15.7-12.7-28.5-28.5-28.5c-15.7,0-28.5,12.7-28.5,28.5c0,0,0,0,0,0C230.5,263.4,243.2,276.2,258.9,276.2L258.9,276.2z" />
+                                <linearGradient id="SVGID_00000149367301035023460920000005362124100745364102_"
+                                    gradientUnits="userSpaceOnUse" x1="294.1397" y1="523.4606" x2="295.9797"
+                                    y2="491.6505" gradientTransform="matrix(1 0 0 1 -36.32 -256.2)">
+                                    <stop offset="0" style="stop-color:#8EA5A8" />
+                                    <stop offset="1" style="stop-color:#CFDCDE" />
+                                </linearGradient>
+                                <path style="fill:url(#SVGID_00000149367301035023460920000005362124100745364102_);"
+                                    d="M258.9,270.2c12.4,0,22.4-10,22.5-22.4
+c0-12.4-10-22.4-22.4-22.5c-12.4,0-22.4,10-22.5,22.4c0,0,0,0,0,0C236.5,260.1,246.6,270.2,258.9,270.2z" />
+                                <path class="st10" d="M258.9,252c2.3,0,4.2-1.9,4.2-4.2c0-2.3-1.9-4.2-4.2-4.2c-2.3,0-4.2,1.9-4.2,4.2c0,0,0,0,0,0
+C254.7,250.1,256.6,252,258.9,252z" />
+                                <linearGradient id="SVGID_00000160875499605745434900000008624813762299613617_"
+                                    gradientUnits="userSpaceOnUse" x1="315.705" y1="309.49" x2="315.705" y2="345.19"
+                                    gradientTransform="matrix(1 0 0 1 -36.32 -256.2)">
+                                    <stop offset="0.25" style="stop-color:#45B7E9" />
+                                    <stop offset="1" style="stop-color:#495BA9" />
+                                </linearGradient>
+                                <path style="fill:url(#SVGID_00000160875499605745434900000008624813762299613617_);"
+                                    d="M382.2,53.9H176.6v18.3h205.6V53.9z" />
+                                <linearGradient id="SVGID_00000083774368277353199220000006371826732927095469_"
+                                    gradientUnits="userSpaceOnUse" x1="378.044" y1="290.3401" x2="376.714"
+                                    y2="238.4801" gradientTransform="matrix(1 0 0 1 -36.32 -256.2)">
+                                    <stop offset="0" style="stop-color:#3A2512" />
+                                    <stop offset="1" style="stop-color:#F99D1C" />
+                                </linearGradient>
+                                <path style="fill:url(#SVGID_00000083774368277353199220000006371826732927095469_);"
+                                    d="M355.9,12.4h-29.8c-2.3,0-4.2-2.7-4.2-6.1
+s1.9-6.2,4.2-6.2h29.8c2.3,0,4.2,2.7,4.2,6.2S358.4,12.4,355.9,12.4z" />
+                                <path class="st23"
+                                    d="M326.1,0c-2.3,0-4.2,2.7-4.2,6.2s1.9,6.1,4.2,6.1s4.2-2.7,4.2-6.1S328.4,0,326.1,0z" />
+                                <linearGradient id="SVGID_00000049941226269722027580000003525863936047241658_"
+                                    gradientUnits="userSpaceOnUse" x1="287.2023" y1="489.139" x2="318.1823"
+                                    y2="551.889" gradientTransform="matrix(1 0 0 1 -36.32 -256.2)">
+                                    <stop offset="0" style="stop-color:#010101" />
+                                    <stop offset="1" style="stop-color:#A9BDBF" />
+                                </linearGradient>
+                                <path style="fill:url(#SVGID_00000049941226269722027580000003525863936047241658_);"
+                                    d="M286.3,296.8l-23.4-50.5
+c-0.4-1.1-1.2-2.1-2.3-2.6c-2.1-1-4.6,0-5.6,2.1c0,0,0,0.1,0,0.1c-0.5,1.3-0.4,2.8,0.3,4l23.4,50.3L286.3,296.8z" />
+                                <linearGradient id="SVGID_00000145051995625002834740000018258519170215390650_"
+                                    gradientUnits="userSpaceOnUse" x1="319.9531" y1="570.1306" x2="317.2331"
+                                    y2="534.5106" gradientTransform="matrix(1 0 0 1 -36.32 -256.2)">
+                                    <stop offset="0" style="stop-color:#010101" />
+                                    <stop offset="1" style="stop-color:#A9BDBF" />
+                                </linearGradient>
+                                <path style="fill:url(#SVGID_00000145051995625002834740000018258519170215390650_);"
+                                    d="M292,302.8l-19,0.1c-2.4,0-4.3-1.9-4.4-4.2
+s1.9-4.3,4.2-4.4l19-0.1c2.4,0,4.3,1.9,4.4,4.2C296.3,300.8,294.4,302.8,292,302.8C292.1,302.8,292.1,302.8,292,302.8z" />
+                                <linearGradient id="SVGID_00000137133712158389442480000015780669985775334280_"
+                                    gradientUnits="userSpaceOnUse" x1="319.378" y1="557.2105" x2="312.278"
+                                    y2="528.7105" gradientTransform="matrix(1 0 0 1 -36.32 -256.2)">
+                                    <stop offset="0" style="stop-color:#8EA5A8" />
+                                    <stop offset="1" style="stop-color:#CFDCDE" />
+                                </linearGradient>
+                                <path style="fill:url(#SVGID_00000137133712158389442480000015780669985775334280_);"
+                                    d="M282.5,301.1c1.4,0,2.5-1.1,2.5-2.5
+c0-1.4-1.1-2.5-2.5-2.5c-1.4,0-2.5,1.1-2.5,2.5S281.1,301.1,282.5,301.1L282.5,301.1z" />
+                                <linearGradient id="SVGID_00000136411604569662616810000000511058274365711515_"
+                                    gradientUnits="userSpaceOnUse" x1="151.35" y1="520.02" x2="151.35" y2="454.54"
+                                    gradientTransform="matrix(1 0 0 1 -36.32 -256.2)">
+                                    <stop offset="0" style="stop-color:#8EA5A8" />
+                                    <stop offset="1" style="stop-color:#CFDCDE" />
+                                </linearGradient>
+                                <path style="fill:url(#SVGID_00000136411604569662616810000000511058274365711515_);"
+                                    d="M115,223.5c1.6,0,2.9-1.3,2.9-2.9
+c0-1.6-1.3-2.9-2.9-2.9c-1.6,0-2.9,1.3-2.9,2.9C112.2,222.2,113.4,223.5,115,223.5C115,223.5,115,223.5,115,223.5z" />
+                                <linearGradient id="SVGID_00000038391388738827299650000008268625273790438313_"
+                                    gradientUnits="userSpaceOnUse" x1="460.64" y1="520.02" x2="460.64" y2="454.54"
+                                    gradientTransform="matrix(1 0 0 1 -36.32 -256.2)">
+                                    <stop offset="0" style="stop-color:#8EA5A8" />
+                                    <stop offset="1" style="stop-color:#CFDCDE" />
+                                </linearGradient>
+                                <path style="fill:url(#SVGID_00000038391388738827299650000008268625273790438313_);"
+                                    d="M424.3,223.8c1.7,0,3.2-1.4,3.2-3.1
+c0-1.7-1.4-3.2-3.1-3.2c-1.7,0-3.2,1.4-3.2,3.1c0,0,0,0,0,0C421.2,222.4,422.6,223.8,424.3,223.8z" />
+                            </g>
+                            <!-- rear wheel -->
+                            <g id="rearWheel">
+                                <path class="st29" d="M115,220.6l90.1-0.7v1.4L115,220.6z" />
+                                <path class="st29" d="M24.8,220l90.3,0.7l-90.3,0.7L24.8,220z" />
+                                <path class="st29" d="M115,220.6l0.7,90.3h-1.4L115,220.6z" />
+                                <path class="st29" d="M115.7,130.4l-0.7,90.3l-0.7-90.3H115.7z" />
+                                <path class="st29" d="M115,220.6l64.3,63.3l-1,1L115,220.6z" />
+                                <path class="st29" d="M51.7,156.3l63.3,64.3l-64.4-63.3L51.7,156.3z" />
+                                <path class="st29" d="M115,220.6l-63.4,64.3l-1.1-1L115,220.6z" />
+                                <path class="st29" d="M179.3,157.3L115,220.6l63.3-64.3L179.3,157.3z" />
+                                <path class="st29" d="M115,220.6l83-35.1l0.5,1.2L115,220.6z" />
+                                <path class="st29" d="M31.3,254.6l83.7-33.9l-83.2,35.2L31.3,254.6z" />
+                                <path class="st29" d="M115,220.6l35.2,83l-1.4,0.5L115,220.6z" />
+                                <path class="st29" d="M81.1,136.9l33.9,83.7l-35.3-83.2L81.1,136.9z" />
+                                <path class="st29" d="M115,220.6l83.6,33.9l-0.5,1.2L115,220.6z" />
+                                <path class="st29" d="M31.9,185.5l83.2,35.1l-83.7-33.9L31.9,185.5z" />
+                                <path class="st29" d="M115,220.6l-33.9,83.6l-1.4-0.4L115,220.6z" />
+                                <path class="st29" d="M150.2,137.5L115,220.6l33.8-83.7L150.2,137.5z" />
+                                <path class="st29" d="M115,220.6l88.4-18.3l0.3,1.4L115,220.6z" />
+                                <path class="st29" d="M26.3,237.6l88.8-17l-88.5,18.2L26.3,237.6z" />
+                                <path class="st29" d="M115,220.6l18.2,88.4l-1.4,0.3L115,220.6z" />
+                                <path class="st29" d="M98.1,132l17,88.6l-18.4-88.4L98.1,132z" />
+                                <path class="st29" d="M115,220.6l75.4,49.5l-0.8,1.2L115,220.6z" />
+                                <path class="st29" d="M40.3,169.9l74.7,50.8L39.5,171L40.3,169.9z" />
+                                <path class="st29" d="M115,220.6L65.4,296l-1.1-0.7L115,220.6z" />
+                                <path class="st29" d="M165.7,145.9l-50.6,74.7l49.5-75.4L165.7,145.9z" />
+                                <path class="st29" d="M115,220.6l74.5-50.8l0.8,1.1L115,220.6z" />
+                                <path class="st29" d="M39.5,270.2l75.5-49.5l-74.7,50.8L39.5,270.2z" />
+                                <path class="st29" d="M115,220.6l50.6,74.7l-1.1,0.7L115,220.6z" />
+                                <path class="st29" d="M65.4,145.1l49.7,75.5L64.3,146L65.4,145.1z" />
+                                <path class="st29" d="M115,220.6l88.6,17l-0.3,1.2L115,220.6z" />
+                                <path class="st29" d="M26.5,202.3l88.5,18.3l-88.8-17L26.5,202.3z" />
+                                <path class="st29" d="M115,220.6l-17,88.6l-1.4-0.3L115,220.6z" />
+                                <path class="st29" d="M133.2,132.3L115,220.6l16.8-88.6L133.2,132.3z" />
+                                <path class="st30" d="M115,105.6c-63.5,0-115,51.5-115,115s51.5,115,115,115s115-51.5,115-115l0,0C230,157.1,178.6,105.6,115,105.6
+    z M115,314.5c-51.8,0-93.8-42-93.8-93.8s42-93.8,93.8-93.8s93.8,42,93.8,93.8l0,0C208.9,272.4,166.9,314.5,115,314.5
+    C115.1,314.5,115.1,314.5,115,314.5L115,314.5z" />
+                                <path class="st31" d="M115,121.1c-54.9,0-99.5,44.5-99.5,99.4c0,54.9,44.5,99.5,99.4,99.5c54.9,0,99.5-44.5,99.5-99.4c0,0,0,0,0,0
+    C214.5,165.6,170,121.1,115,121.1z M115,314.9c-52.1,0-94.2-42.2-94.2-94.2S63,126.4,115,126.4s94.3,42.2,94.3,94.2c0,0,0,0,0,0
+    C209.3,272.7,167.1,314.9,115,314.9z" />
+
+                                <linearGradient id="SVGID_00000080896493063664978240000006526805665226783384_"
+                                    gradientUnits="userSpaceOnUse" x1="151.36" y1="386.47" x2="151.36" y2="633.15"
+                                    gradientTransform="matrix(1 0 0 1 -36.32 -256.2)">
+                                    <stop offset="0" style="stop-color:#8EA5A8" />
+                                    <stop offset="1" style="stop-color:#DDE7E7" />
+                                </linearGradient>
+                                <path style="fill:url(#SVGID_00000080896493063664978240000006526805665226783384_);"
+                                    d="M115,125.4c-52.6,0-95.2,42.6-95.2,95.2
+    s42.6,95.2,95.2,95.2s95.2-42.6,95.2-95.2l0,0C210.2,168.1,167.6,125.5,115,125.4z M115,310.9c-49.9,0-90.3-40.4-90.3-90.3
+    s40.4-90.3,90.3-90.3s90.3,40.4,90.3,90.3c0,0,0,0,0,0C205.2,270.4,164.8,310.9,115,310.9z" />
+                            </g>
+                            <!-- front wheel -->
+                            <g id="frontWheel">
+                                <path class="st30" d="M424.3,105.6c-63.5,0-115,51.5-115,115s51.5,115,115,115s115-51.5,115-115l0,0
+    C539.3,157.1,487.8,105.6,424.3,105.6z M424.3,314.5c-51.8,0-93.8-42-93.8-93.8s42-93.8,93.8-93.8s93.8,42,93.8,93.8c0,0,0,0,0,0
+    C518.2,272.4,476.2,314.5,424.3,314.5C424.3,314.5,424.3,314.5,424.3,314.5L424.3,314.5z" />
+                                <path class="st31" d="M424.3,121.1c-54.9,0-99.5,44.5-99.5,99.4s44.5,99.5,99.4,99.5c54.9,0,99.5-44.5,99.5-99.4c0,0,0,0,0,0
+    C523.8,165.6,479.2,121.1,424.3,121.1z M424.3,314.9c-52.1,0-94.3-42.2-94.3-94.2s42.2-94.3,94.2-94.3s94.3,42.2,94.3,94.2
+    c0,0,0,0,0,0C518.6,272.7,476.4,314.9,424.3,314.9z" />
+                                <path class="st29" d="M424.3,220.6l90.3-0.7v1.4L424.3,220.6z" />
+                                <path class="st29" d="M334,220l90.3,0.7l-90.3,0.7V220z" />
+                                <path class="st29" d="M424.3,220.6l0.7,90.3h-1.3L424.3,220.6z" />
+                                <path class="st29" d="M425,130.4l-0.7,90.3l-0.6-90.3H425z" />
+                                <path class="st29" d="M424.3,220.6l64.3,63.3l-1,1L424.3,220.6z" />
+                                <path class="st29" d="M361,156.3l63.3,64.3L360,157.3L361,156.3z" />
+                                <path class="st29" d="M424.3,220.6L361,284.9l-1-1L424.3,220.6z" />
+                                <path class="st29" d="M488.6,157.3l-64.3,63.3l63.4-64.3L488.6,157.3z" />
+                                <path class="st29" d="M424.3,220.6l83.2-35.1l0.4,1.2L424.3,220.6z" />
+                                <path class="st29" d="M340.6,254.6l83.7-33.9l-83.2,35.2L340.6,254.6z" />
+                                <path class="st29" d="M424.3,220.6l35.1,83l-1.2,0.5L424.3,220.6z" />
+                                <path class="st29" d="M390.4,136.9l33.9,83.7l-35.1-83.2L390.4,136.9z" />
+                                <path class="st29" d="M424.3,220.6l83.6,33.9l-0.4,1.2L424.3,220.6z" />
+                                <path class="st29" d="M341.1,185.5l83.2,35.1l-83.7-33.9L341.1,185.5z" />
+                                <path class="st29" d="M424.3,220.6l-33.9,83.6l-1.2-0.4L424.3,220.6z" />
+                                <path class="st29" d="M459.5,137.5l-35.1,83.2l33.9-83.7L459.5,137.5z" />
+                                <path class="st29" d="M424.3,220.6l88.4-18.3l0.3,1.4L424.3,220.6z" />
+                                <path class="st29" d="M335.7,237.6l88.6-17l-88.4,18.2L335.7,237.6z" />
+                                <path class="st29" d="M424.3,220.6l18.4,88.4l-1.4,0.3L424.3,220.6z" />
+                                <path class="st29" d="M407.3,132l17,88.6L406,132.3L407.3,132z" />
+                                <path class="st29" d="M424.3,220.6l75.4,49.5l-0.7,1.2L424.3,220.6z" />
+                                <path class="st29" d="M349.6,169.9l74.7,50.8L348.9,171L349.6,169.9z" />
+                                <path class="st29" d="M424.3,220.6L374.8,296l-1.2-0.7L424.3,220.6z" />
+                                <path class="st29" d="M475.1,145.9l-50.8,74.7l49.5-75.4L475.1,145.9z" />
+                                <path class="st29" d="M424.3,220.6l74.7-50.8l0.7,1.1L424.3,220.6z" />
+                                <path class="st29" d="M348.9,270.2l75.4-49.5l-74.7,50.7L348.9,270.2z" />
+                                <path class="st29" d="M424.3,220.6l50.8,74.7l-1.2,0.7L424.3,220.6z" />
+                                <path class="st29" d="M374.8,145.1l49.5,75.5L373.6,146L374.8,145.1z" />
+                                <path class="st29" d="M424.3,220.6l88.6,17l-0.3,1.2L424.3,220.6z" />
+                                <path class="st29" d="M335.9,202.3l88.4,18.3l-88.6-17L335.9,202.3z" />
+                                <path class="st29" d="M424.3,220.6l-17,88.6L406,309L424.3,220.6z" />
+                                <path class="st29" d="M442.7,132.3l-18.3,88.4l17-88.6L442.7,132.3z" />
+                                <path class="st31" d="M424.3,121.1c-54.9,0-99.5,44.5-99.5,99.4s44.5,99.5,99.4,99.5c54.9,0,99.5-44.5,99.5-99.4c0,0,0,0,0,0
+    C523.8,165.6,479.2,121.1,424.3,121.1z M424.3,314.9c-52.1,0-94.3-42.2-94.3-94.2s42.2-94.3,94.2-94.3s94.3,42.2,94.3,94.2
+    c0,0,0,0,0,0C518.6,272.7,476.4,314.9,424.3,314.9z" />
+
+                                <linearGradient id="SVGID_00000047751434504970876200000000788631654343746233_"
+                                    gradientUnits="userSpaceOnUse" x1="460.63" y1="386.47" x2="460.63" y2="633.15"
+                                    gradientTransform="matrix(1 0 0 1 -36.32 -256.2)">
+                                    <stop offset="0" style="stop-color:#8EA5A8" />
+                                    <stop offset="1" style="stop-color:#DDE7E7" />
+                                </linearGradient>
+                                <path style="fill:url(#SVGID_00000047751434504970876200000000788631654343746233_);"
+                                    d="M424.3,125.4c-52.6,0-95.2,42.6-95.2,95.2
+    s42.6,95.2,95.2,95.2s95.2-42.6,95.2-95.2C519.5,168.1,476.9,125.5,424.3,125.4z M424.3,310.9c-49.9,0-90.3-40.4-90.3-90.3
+    s40.4-90.3,90.3-90.3s90.3,40.4,90.3,90.3c0,0,0,0,0,0C514.6,270.5,474.2,310.9,424.3,310.9z" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="col-6 h-100 text-center p-2  ">
+                        <div class=" text-white h-100 p-2 d-flex flex-column align-items-center">
+                            <div id="quizBike" class="">
+                                <div id="quiz-start-screen">
+                                    <p><a href="#" id="quiz-start-btn" class="quiz-button">Start Bike quiz!</a></p>
+                                </div>
+                                <div id="quiz-gameover-screen"
+                                    class="text-center h-100 flex-column align-items-center" style="display: flex;">
+                                    <div class="mt-auto mb-auto">
+                                        <h2 class="mb-4">Oops... Try Again!</h2>
+                                        <p><a class="pt-2 pb-2 pe-3 ps-3" href="#" id="quiz-retry-btn">Retry</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class=" text-center text-lg-start mt-auto">
+                    <div class="text-center p-2" style="font-size: 12px; background-color: rgb(231, 231, 231);">
+                        Copyright 2022 © Quizzy
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- Plane -->
+    <div class="modal fade" id="quizSection2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-dialog modal-fullscreen ">
+                <div class="modal-content ">
+                    <nav class="navbar navbar-expand-lg navbar-dark welcomeBG">
+                        <div class="container-fluid">
+                            <a class="navbar-brand mb-2 ms-2 me-4 " href="#">
+                                <img class=" quizzyNav navbar-brand" src="images/quizzy logo.svg">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style="text-decoration: none;">
+                                    <li class="nav-item me-3">
+                                        <a class="nav-link" href="#">Categories</a>
+                                    </li>
+                                    <li class="nav-item me-3">
+                                        <a class="nav-link" href="#">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+                                </ul>
+                                <ul class="navbar-nav ms-auto mb-lg-0 ">
+                                    <li class="nav-item">
+                                        <a class="nav-link mt-2 me-2" href="#"><i
+                                                class="fas fa-share-square  fa-lg"></i></a>
+                                    </li>
+                                    <li class="nav-item me-auto exitPill rounded-pill ">
+                                        <a class="nav-link mt-1 text-white " data-bs-dismiss="modal" href="#"
+                                            tabindex="-1"><b class="ms-2 me-2 "><i
+                                                    class="pe-2 text-white fas fa-door-open"></i>Exit Quiz</b></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="text-center">
+                        <h1 class=" mt-2">Plane Quiz</h1>
+                        <h5 class=" mt-3 mb-3">Level 2</h5>
+                    </div>
+                    <div class="container-fluid mt-2 d-flex w-75">
+                        <div class="col-6 p-5">
+                            <svg style="overflow: visible;" id="Layer_1" data-name="Layer 1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 519.76 401">
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill: url(#linear-gradient);
+                                        }
+
+                                        .cls-2 {
+                                            fill: url(#linear-gradient-2);
+                                        }
+
+                                        .cls-3 {
+                                            fill: url(#linear-gradient-3);
+                                        }
+
+                                        .cls-4 {
+                                            fill: url(#linear-gradient-4);
+                                        }
+
+                                        .cls-5 {
+                                            fill: url(#linear-gradient-5);
+                                        }
+
+                                        .cls-6 {
+                                            fill: url(#linear-gradient-6);
+                                        }
+
+                                        .cls-7 {
+                                            fill: url(#linear-gradient-7);
+                                        }
+
+                                        .cls-8 {
+                                            fill: url(#linear-gradient-8);
+                                        }
+
+                                        .cls-9 {
+                                            fill: url(#linear-gradient-9);
+                                        }
+
+                                        .cls-10 {
+                                            fill: url(#linear-gradient-10);
+                                        }
+
+                                        .cls-11,
+                                        .cls-12,
+                                        .cls-15,
+                                        .cls-16,
+                                        .cls-23,
+                                        .cls-24,
+                                        .cls-27,
+                                        .cls-28 {
+                                            isolation: isolate;
+                                        }
+
+                                        .cls-11,
+                                        .cls-15,
+                                        .cls-23,
+                                        .cls-27 {
+                                            opacity: 0.5;
+                                        }
+
+                                        .cls-11 {
+                                            fill: url(#linear-gradient-11);
+                                        }
+
+                                        .cls-12,
+                                        .cls-16,
+                                        .cls-24,
+                                        .cls-28 {
+                                            opacity: 0.75;
+                                        }
+
+                                        .cls-12 {
+                                            fill: url(#linear-gradient-12);
+                                        }
+
+                                        .cls-13 {
+                                            fill: url(#linear-gradient-13);
+                                        }
+
+                                        .cls-14 {
+                                            fill: url(#linear-gradient-14);
+                                        }
+
+                                        .cls-15 {
+                                            fill: url(#linear-gradient-15);
+                                        }
+
+                                        .cls-16 {
+                                            fill: url(#linear-gradient-16);
+                                        }
+
+                                        .cls-17 {
+                                            fill: url(#linear-gradient-17);
+                                        }
+
+                                        .cls-18 {
+                                            fill: url(#linear-gradient-18);
+                                        }
+
+                                        .cls-19 {
+                                            fill: url(#linear-gradient-19);
+                                        }
+
+                                        .cls-20 {
+                                            fill: url(#linear-gradient-20);
+                                        }
+
+                                        .cls-21 {
+                                            fill: url(#linear-gradient-21);
+                                        }
+
+                                        .cls-22 {
+                                            fill: url(#linear-gradient-22);
+                                        }
+
+                                        .cls-23 {
+                                            fill: url(#linear-gradient-23);
+                                        }
+
+                                        .cls-24 {
+                                            fill: url(#linear-gradient-24);
+                                        }
+
+                                        .cls-25 {
+                                            fill: url(#linear-gradient-25);
+                                        }
+
+                                        .cls-26 {
+                                            fill: url(#linear-gradient-26);
+                                        }
+
+                                        .cls-27 {
+                                            fill: url(#linear-gradient-27);
+                                        }
+
+                                        .cls-28 {
+                                            fill: url(#linear-gradient-28);
+                                        }
+
+                                        .cls-29 {
+                                            fill: url(#linear-gradient-29);
+                                        }
+
+                                        .cls-30 {
+                                            fill: url(#linear-gradient-30);
+                                        }
+
+                                        .cls-31 {
+                                            fill: url(#linear-gradient-31);
+                                        }
+
+                                        .cls-32 {
+                                            fill: url(#linear-gradient-32);
+                                        }
+
+                                        .cls-33 {
+                                            fill: url(#radial-gradient);
+                                        }
+
+                                        .cls-34 {
+                                            fill: url(#linear-gradient-33);
+                                        }
+
+                                        .cls-35 {
+                                            fill: url(#linear-gradient-34);
+                                        }
+
+                                        .cls-36 {
+                                            fill: url(#linear-gradient-35);
+                                        }
+
+                                        .cls-37 {
+                                            fill: url(#linear-gradient-36);
+                                        }
+
+                                        .cls-38 {
+                                            fill: url(#linear-gradient-37);
+                                        }
+
+                                        .cls-39 {
+                                            fill: url(#linear-gradient-38);
+                                        }
+
+                                        .cls-40 {
+                                            fill: url(#linear-gradient-39);
+                                        }
+
+                                        .cls-41 {
+                                            fill: url(#linear-gradient-40);
+                                        }
+
+                                        .cls-42 {
+                                            fill: url(#linear-gradient-41);
+                                        }
+
+                                        .cls-43 {
+                                            fill: url(#linear-gradient-42);
+                                        }
+
+                                        .cls-44 {
+                                            fill: #e6e7e8;
+                                            stroke: #000;
+                                            stroke-miterlimit: 10;
+                                            stroke-width: 2px;
+                                        }
+                                    </style>
+                                    <linearGradient id="linear-gradient" x1="261.79" y1="978.45" x2="198.77"
+                                        y2="1012.82" gradientTransform="translate(0 -474.61)"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0.49" stop-color="#fff" />
+                                        <stop offset="0.59" stop-color="#f9fcfd" />
+                                        <stop offset="0.72" stop-color="#e6eaea" />
+                                        <stop offset="0.87" stop-color="#cad6d6" />
+                                        <stop offset="1" stop-color="#a9bdc0" />
+                                    </linearGradient>
+                                    <linearGradient id="linear-gradient-2" x1="201.3" y1="1027.74" x2="256.68"
+                                        y2="972.36" gradientTransform="translate(0 -474.61)"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="#fff" />
+                                        <stop offset="0.18" stop-color="#f9fcfd" />
+                                        <stop offset="0.44" stop-color="#e6eaea" />
+                                        <stop offset="0.74" stop-color="#cad6d6" />
+                                        <stop offset="1" stop-color="#a9bdc0" />
+                                    </linearGradient>
+                                    <linearGradient id="linear-gradient-3" x1="221.08" y1="983.84" x2="254.31"
+                                        y2="980.99" gradientTransform="translate(0 -474.61)"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="#fff" stop-opacity="0" />
+                                        <stop offset="0.19" stop-color="#f7f8f9" stop-opacity="0.09" />
+                                        <stop offset="0.48" stop-color="#e0e6e6" stop-opacity="0.24" />
+                                        <stop offset="0.85" stop-color="#bac9cb" stop-opacity="0.43" />
+                                        <stop offset="1" stop-color="#a9bdc0" stop-opacity="0.5" />
+                                    </linearGradient>
+                                    <linearGradient id="linear-gradient-4" x1="165.72" y1="1021.96" x2="250.03"
+                                        y2="986.95" gradientTransform="translate(0 -474.61)"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="#fff" stop-opacity="0" />
+                                        <stop offset="0.19" stop-color="#fdfeff" stop-opacity="0.09" />
+                                        <stop offset="0.38" stop-color="#f1f3f3" stop-opacity="0.19" />
+                                        <stop offset="0.57" stop-color="#dbe2e3" stop-opacity="0.28" />
+                                        <stop offset="0.75" stop-color="#bfcccd" stop-opacity="0.38" />
+                                        <stop offset="0.94" stop-color="#9db1b4" stop-opacity="0.47" />
+                                        <stop offset="1" stop-color="#8ea5a8" stop-opacity="0.5" />
+                                    </linearGradient>
+                                    <linearGradient id="linear-gradient-5" x1="197.63" y1="914.32" x2="163.25"
+                                        y2="977.33" xlink:href="#linear-gradient" />
+                                    <linearGradient id="linear-gradient-6" x1="185.46" y1="962.98" x2="197.51"
+                                        y2="927.29" xlink:href="#linear-gradient-3" />
+                                    <linearGradient id="linear-gradient-7" x1="153.13" y1="1006.27" x2="189.89"
+                                        y2="925.87" gradientTransform="translate(0 -474.61)"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="#fff" stop-opacity="0" />
+                                        <stop offset="0.22" stop-color="#fff" stop-opacity="0.11" />
+                                        <stop offset="0.4" stop-color="#f2f4f5" stop-opacity="0.2" />
+                                        <stop offset="0.57" stop-color="#e0e6e6" stop-opacity="0.29" />
+                                        <stop offset="0.74" stop-color="#c9d4d5" stop-opacity="0.37" />
+                                        <stop offset="0.89" stop-color="#a9bbbd" stop-opacity="0.45" />
+                                        <stop offset="1" stop-color="#8ea5a8" stop-opacity="0.5" />
+                                    </linearGradient>
+                                    <linearGradient id="linear-gradient-8" x1="152.55" y1="975.86" x2="193.71"
+                                        y2="924.9" xlink:href="#linear-gradient-2" />
+                                    <linearGradient id="linear-gradient-9" x1="406.59" y1="954.69" x2="445.11"
+                                        y2="916.17" xlink:href="#linear-gradient-2" />
+                                    <linearGradient id="linear-gradient-10" x1="470.87" y1="963.25" x2="413.59"
+                                        y2="925.44" xlink:href="#linear-gradient-2" />
+                                    <linearGradient id="linear-gradient-11" x1="428.47" y1="934.14" x2="434.6"
+                                        y2="940.26" gradientTransform="translate(0 -474.61)"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="#fff" stop-opacity="0" />
+                                        <stop offset="0.3" stop-color="#fff" />
+                                        <stop offset="1" stop-color="#fff" stop-opacity="0" />
+                                    </linearGradient>
+                                    <linearGradient id="linear-gradient-12" x1="445.13" y1="948.96" x2="413.24"
+                                        y2="922.42" gradientTransform="translate(0 -474.61)"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="#9bb0b5" />
+                                        <stop offset="0.7" stop-color="#95a9ad" stop-opacity="0.3" />
+                                        <stop offset="1" stop-color="#8ea5a8" stop-opacity="0" />
+                                    </linearGradient>
+                                    <linearGradient id="linear-gradient-13" x1="386.91" y1="891.08" x2="425.44"
+                                        y2="852.55" xlink:href="#linear-gradient-2" />
+                                    <linearGradient id="linear-gradient-14" x1="451.15" y1="899.73" x2="393.86"
+                                        y2="861.93" xlink:href="#linear-gradient-2" />
+                                    <linearGradient id="linear-gradient-15" x1="408.83" y1="870.53" x2="414.95"
+                                        y2="876.64" xlink:href="#linear-gradient-11" />
+                                    <linearGradient id="linear-gradient-16" x1="425.46" y1="885.38" x2="393.57"
+                                        y2="858.83" xlink:href="#linear-gradient-12" />
+                                    <linearGradient id="linear-gradient-17" x1="334.82" y1="953.74" x2="463.97"
+                                        y2="860.05" xlink:href="#linear-gradient" />
+                                    <linearGradient id="linear-gradient-18" x1="352.27" y1="937.98" x2="398.95"
+                                        y2="916.65" gradientTransform="translate(0 -474.61)"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="#ec2727" />
+                                        <stop offset="0.22" stop-color="#ec2227" />
+                                        <stop offset="0.52" stop-color="#e32228" />
+                                        <stop offset="0.88" stop-color="#c82628" />
+                                        <stop offset="1" stop-color="#bd2d27" />
+                                    </linearGradient>
+                                    <linearGradient id="linear-gradient-19" x1="516.47" y1="802.57" x2="386.37"
+                                        y2="925.08" xlink:href="#linear-gradient-3" />
+                                    <linearGradient id="linear-gradient-20" x1="310.06" y1="917.9" x2="435.41"
+                                        y2="906.5" gradientTransform="translate(0 -474.61)"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="#fff" stop-opacity="0" />
+                                        <stop offset="0.15" stop-color="#f7f8f9" stop-opacity="0.08" />
+                                        <stop offset="0.4" stop-color="#e0e6e6" stop-opacity="0.2" />
+                                        <stop offset="0.7" stop-color="#bac8ca" stop-opacity="0.35" />
+                                        <stop offset="1" stop-color="#8ea5a8" stop-opacity="0.5" />
+                                    </linearGradient>
+                                    <linearGradient id="linear-gradient-21" x1="285.03" y1="789.19" x2="323.55"
+                                        y2="750.67" xlink:href="#linear-gradient-2" />
+                                    <linearGradient id="linear-gradient-22" x1="276.42" y1="725.03" x2="314.23"
+                                        y2="782.31" xlink:href="#linear-gradient-2" />
+                                    <linearGradient id="linear-gradient-23" x1="305.65" y1="767.35" x2="299.53"
+                                        y2="761.22" xlink:href="#linear-gradient-11" />
+                                    <linearGradient id="linear-gradient-24" x1="290.79" y1="750.71" x2="317.33"
+                                        y2="782.6" xlink:href="#linear-gradient-12" />
+                                    <linearGradient id="linear-gradient-25" x1="221.43" y1="769.51" x2="259.95"
+                                        y2="730.99" xlink:href="#linear-gradient-2" />
+                                    <linearGradient id="linear-gradient-26" x1="212.88" y1="705.32" x2="250.69"
+                                        y2="762.61" xlink:href="#linear-gradient-2" />
+                                    <linearGradient id="linear-gradient-27" x1="242.03" y1="747.7" x2="235.9"
+                                        y2="741.58" xlink:href="#linear-gradient-11" />
+                                    <linearGradient id="linear-gradient-28" x1="227.18" y1="731.05" x2="253.73"
+                                        y2="762.95" xlink:href="#linear-gradient-12" />
+                                    <linearGradient id="linear-gradient-29" x1="222.43" y1="841.32" x2="316.12"
+                                        y2="712.17" xlink:href="#linear-gradient" />
+                                    <linearGradient id="linear-gradient-30" x1="316.97" y1="676.1" x2="254.93"
+                                        y2="792.58" xlink:href="#linear-gradient-3" />
+                                    <linearGradient id="linear-gradient-31" x1="258.28" y1="866.06" x2="269.67"
+                                        y2="740.7" xlink:href="#linear-gradient-20" />
+                                    <linearGradient id="linear-gradient-32" x1="238.12" y1="823.82" x2="259.45"
+                                        y2="777.15" xlink:href="#linear-gradient-18" />
+                                    <radialGradient id="radial-gradient" cx="-128.06" cy="617.2" r="16.62"
+                                        gradientTransform="matrix(9.09, -8.86, 1.34, 1.38, 668.86, -1619.32)"
+                                        xlink:href="#linear-gradient" />
+                                    <linearGradient id="linear-gradient-33" x1="315.5" y1="837.5" x2="341.05"
+                                        y2="863.06" xlink:href="#linear-gradient-3" />
+                                    <linearGradient id="linear-gradient-34" x1="399.95" y1="776.16" x2="218.89"
+                                        y2="957.22" xlink:href="#linear-gradient-3" />
+                                    <linearGradient id="linear-gradient-35" x1="210.36" y1="944.71" x2="227.12"
+                                        y2="961.75" xlink:href="#linear-gradient-2" />
+                                    <linearGradient id="linear-gradient-36" x1="211.96" y1="838.62" x2="217.58"
+                                        y2="1042.97" xlink:href="#linear-gradient-2" />
+                                    <linearGradient id="linear-gradient-37" x1="199.69" y1="815.56" x2="216.69"
+                                        y2="973.54" xlink:href="#linear-gradient-2" />
+                                    <linearGradient id="linear-gradient-38" x1="445.81" y1="749.53" x2="426.71"
+                                        y2="758.44" gradientTransform="translate(0 -474.61)"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0" stop-color="#020202" />
+                                        <stop offset="0.11" stop-color="#0a0a0a" />
+                                        <stop offset="0.26" stop-color="#17191a" />
+                                        <stop offset="0.44" stop-color="#323636" />
+                                        <stop offset="0.64" stop-color="#576162" />
+                                        <stop offset="0.85" stop-color="#849394" />
+                                        <stop offset="1" stop-color="#a9bdc0" />
+                                    </linearGradient>
+                                    <linearGradient id="linear-gradient-39" x1="424.21" y1="727.15" x2="424.09"
+                                        y2="749.23" xlink:href="#linear-gradient-38" />
+                                    <linearGradient id="linear-gradient-40" x1="438.28" y1="735.78" x2="427.84"
+                                        y2="752.17" xlink:href="#linear-gradient-38" />
+                                    <linearGradient id="linear-gradient-41" x1="448.13" y1="760.2" x2="423.44"
+                                        y2="764.83" xlink:href="#linear-gradient-38" />
+                                    <linearGradient id="linear-gradient-42" x1="412.92" y1="725.15" x2="414.7"
+                                        y2="748.54" xlink:href="#linear-gradient-38" />
+                                </defs>
+                                <g id="plane" id="Layer_2" data-name="Layer 2">
+                                    <g id="Layer_2-2" data-name="Layer 2-2">
+                                        <path class="cls-1"
+                                            d="M241.49,483.36l14.44,55.95a18.07,18.07,0,0,1-5.7,18.23l-3.44,3L200.31,501.1l20.8-23.54Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-2"
+                                            d="M245.48,550.41a6.73,6.73,0,0,0,5.32,3.13l2.85.1a22.17,22.17,0,0,1-3.45,4l-3.44,2.94-46.47-59.38,4.18-4.65,7-.86Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-3"
+                                            d="M247.74,553.63c6.17-12-.86-33.14-12.05-70.46-13.2-44.16-9-5.61-9-5.61l-20.5,18.23C206.26,495.79,246.61,555.81,247.74,553.63Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-4"
+                                            d="M241.49,483.36l14.44,55.95a18.07,18.07,0,0,1-5.7,18.23l-3.44,3L200.31,501.1l20.8-23.54Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-5"
+                                            d="M218.13,460l-55.94-14.43A18.05,18.05,0,0,0,144,451.26L141,454.71l59.38,46.47,23.54-20.88Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-6"
+                                            d="M147.86,453.73c12-6.17,33.14.86,70.46,12,44.16,13.2,5.61,9,5.61,9l-18.24,20.52C205.69,495.23,145.68,454.87,147.86,453.73Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-7"
+                                            d="M218.13,460l-55.94-14.43A18.05,18.05,0,0,0,144,451.26L141,454.71l59.38,46.47,23.54-20.88Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-8"
+                                            d="M151.09,456a6.69,6.69,0,0,1-3.14-5.31l-.09-2.84a21.84,21.84,0,0,0-4,3.44L141,454.73l59.39,46.48,4.65-4.18.86-7Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-9"
+                                            d="M426.48,439.59l-20.24,20.23,20.62,20.6,20.22-20.22-.38-.95A34.43,34.43,0,0,0,426.48,439.59Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-10"
+                                            d="M431.06,441.57l-8.83,8.83A13.53,13.53,0,0,0,419,464.47l2.66,7.5H426a13.55,13.55,0,0,0,9.6-4l10.53-10.55a9.29,9.29,0,0,1,.77,1.81l.38.95-20.32,20.22-20.69-20.6,20.24-20.23A40.3,40.3,0,0,1,431.06,441.57Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-11"
+                                            d="M417.07,470.64l22.51-22.5a34.24,34.24,0,0,1,5,6.64L423,476.43Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-12"
+                                            d="M423.82,452.69c5,4.66,7.12,13.87,4.93,25.93l-1.8,1.8-20.71-20.6,20.24-20.23a34.7,34.7,0,0,1,5.32,2.47C428.48,444.72,420.3,449.46,423.82,452.69Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-13"
+                                            d="M406.82,376l-20.23,20.22,20.61,20.61,20.23-20.23-.38-.95A34.7,34.7,0,0,0,406.82,376Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-14"
+                                            d="M411.26,378.05l-8.83,8.83a13.52,13.52,0,0,0-3.22,14.05l2.66,7.51h4.31a13.51,13.51,0,0,0,9.59-4l10.55-10.53a10.52,10.52,0,0,1,.75,1.8l.38,1-20.22,20.23-20.62-20.61,20.24-20.23A23.32,23.32,0,0,1,411.26,378.05Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-15"
+                                            d="M397.42,407l22.51-22.51a35.45,35.45,0,0,1,5,6.65l-21.65,21.65Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-16"
+                                            d="M404.16,389.16c5,4.66,7.12,13.86,4.94,25.92l-1.81,1.81-20.6-20.61,20.23-20.23a34.59,34.59,0,0,1,5.31,2.47C408.82,381.09,400.56,385.84,404.16,389.16Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-17"
+                                            d="M330.47,399.32S377.86,450.41,391,483l25.26,62.48a2.63,2.63,0,0,0,4.56.47c8.07-10.73,15.49-29.05,12.15-41.69l-25.35-98a475.67,475.67,0,0,0-32.71-73.5l-4.75-8.61-48.33,57.46Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-18"
+                                            d="M406.1,520l-.19-.09L391,483.07c-13.24-32.57-60.53-83.67-60.53-83.67l-1.9-4.08,8.55-6.26c31,36.65,53.08,71.12,62.1,93.91C408.24,506.05,406,519.89,406.1,520Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-19"
+                                            d="M374.26,356c20.31,30.12,53.55,128,53.55,151.55s-2,4.85-4.3-9.46-23.17-76.44-31.84-91.36S360,368.58,360,368.58Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-20"
+                                            d="M330.47,399.32S377.86,450.41,391,483l25.26,62.48a2.63,2.63,0,0,0,4.56.47c8.07-10.73,15.49-29.05,12.15-41.69l-25.35-98a475.67,475.67,0,0,0-32.71-73.5l-4.75-8.61-48.33,57.46Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-21"
+                                            d="M325.53,294.68,305.31,314.9,284.7,294.3l20.22-20.23,1,.38A34.7,34.7,0,0,1,325.53,294.68Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-22"
+                                            d="M323.48,290.22l-8.87,8.83a13.54,13.54,0,0,1-14.05,3.23l-7.51-2.66v-4.3a13.55,13.55,0,0,1,4-9.52l10.54-10.59a10.23,10.23,0,0,0-1.8-.76l-.95-.38L284.6,294.3l20.61,20.6,20.22-20.22A23.28,23.28,0,0,0,323.48,290.22Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-23"
+                                            d="M294.48,304.08,317,281.57a34.61,34.61,0,0,0-6.65-5l-21.65,21.65Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-24"
+                                            d="M312.33,297.34c-4.65-5-13.86-7.13-25.92-4.94l-1.81,1.8,20.61,20.61,20.22-20.23a33.94,33.94,0,0,0-2.46-5.34C320.4,292.68,315.65,300.94,312.33,297.34Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-25"
+                                            d="M261.91,275l-20.19,20.24-20.66-20.65,20.23-20.23.94.38A34.44,34.44,0,0,1,261.91,275Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-26"
+                                            d="M259.91,270.46l-8.83,8.83A13.52,13.52,0,0,1,237,282.52l-7.5-2.66v-4.3a13.55,13.55,0,0,1,4-9.56l10.55-10.55a11,11,0,0,0-1.81-.76l-.95-.38-20.24,20.3,20.66,20.65L261.94,275A36.53,36.53,0,0,0,259.91,270.46Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-27"
+                                            d="M230.86,284.42l22.5-22.51a34.24,34.24,0,0,0-6.64-5l-21.66,21.75Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-28"
+                                            d="M248.8,277.67c-4.65-5-13.86-7.12-25.92-4.93l-1.82,1.87,20.66,20.65L261.94,275a32.41,32.41,0,0,0-2.47-5.31C256.78,273,252,281.19,248.8,277.67Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-29"
+                                            d="M302.17,371s-51.09-47.34-83.69-60.48L156,285.26a2.64,2.64,0,0,1-1.35-3.47,2.72,2.72,0,0,1,.88-1.08c10.83-8,29.16-15.39,41.78-12l98,25.34a476.57,476.57,0,0,1,73.5,32.7l8.61,4.75L320,379.75Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-30"
+                                            d="M345.48,327.24c-30.13-20.41-128.11-53.65-151.56-53.65s-4.85,2,9.46,4.31,76.45,23.16,91.36,31.84,38.2,31.65,38.2,31.65Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-31"
+                                            d="M302.17,371s-51.09-47.34-83.69-60.48L156,285.26a2.64,2.64,0,0,1-1.35-3.47,2.72,2.72,0,0,1,.88-1.08c10.83-8,29.16-15.39,41.78-12l98,25.34a476.57,476.57,0,0,1,73.5,32.7l8.61,4.75L320,379.75Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-32"
+                                            d="M181.47,295.44l.11.19,36.84,14.91C251,323.73,302.08,371,302.08,371l4.08,1.9,6.27-8.54c-36.66-30.87-71.13-53-93.92-62C195.43,293.25,181.58,295.53,181.47,295.44Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-33"
+                                            d="M202.37,499.12c24,1.15,71.88-32.94,82.52-43.58S413.18,327.31,429.47,311s31.19-52.31,22.24-61.25-44.89,5.92-61.22,22.22L245.86,416.61C235.32,427.15,201.13,475.14,202.37,499.12Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-34"
+                                            d="M202.37,499.12c24,1.15,71.88-32.94,82.52-43.58S413.18,327.31,429.47,311s31.19-52.31,22.24-61.25-44.89,5.92-61.22,22.22L245.86,416.61C235.32,427.15,201.13,475.14,202.37,499.12Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-35"
+                                            d="M231.23,470.26c13.77-3.8,48-32.58,56.13-40.75L410,306.93c12.54-12.54,16.43-24.79,12.91-28.3s-15.76.38-28.29,12.91L272,414.13C263.81,422.3,235,456.49,231.23,470.26Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-36"
+                                            d="M232,479.57c11.58-11.3,7.21-17.39,7.21-17.39L202.27,497v2.09c6.27.29,14.06-1.81,22.38-5.22C224.78,490.39,226.23,485.27,232,479.57Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-37"
+                                            d="M191.16,510.34c4.08-.48,13-7.41,15.1-9.47l27.63-27.64c3.23-3.22,6.65-9.68,5.32-10.91s-7.74,2.18-10.92,5.32l-27.63,27.63C198.56,497.32,191.54,506.34,191.16,510.34Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-38"
+                                            d="M206.26,500.83c2.09-2.09,30.29-29.82,25.64-25.64,6.56-5.79,11.11-16.71,4.56-10.06l-45.3,45.29C195.15,510,204.17,502.92,206.26,500.83Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-39" d="M433.5,276.33l2.66,5.71,6.08-.49-1.8-9.09Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-40" d="M425.14,268.08l3.71-7-8.92-1.81-.48,6.08Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-41"
+                                            d="M436,265.71a16.06,16.06,0,0,0-2.38-1.89l-3.33-2.12L426.38,269l1.91,1.9,2.27,2.28,1.9,1.9,7.13-3.92-1.53-2.66A11.65,11.65,0,0,0,436,265.71Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-42"
+                                            d="M436.45,283.66l-1.14,8.45,1.05-.38a7.92,7.92,0,0,0,5.21-5.6l.77-2.94Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                        <path class="cls-43"
+                                            d="M418.31,259.25l-2.94.76a8,8,0,0,0-5.61,5.23l-.37,1.05,8.45-1.15Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                    </g>
+                                </g>
+                                <g id="cloud1" id="Layer_2-2-2" data-name="Layer 2">
+                                    <g id="Layer_2-2-3" data-name="Layer 2-2">
+                                        <path class="cls-44"
+                                            d="M549.3,350.61A17.67,17.67,0,0,0,539,327.86a17.86,17.86,0,0,0-6.1-1.13,17.52,17.52,0,0,0-9.77,3,29.31,29.31,0,0,0-54.72,14.58v1.48A26.39,26.39,0,0,0,477.15,397H544.6a23.46,23.46,0,0,0,4.71-46.43Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                    </g>
+                                </g>
+                                <g id="cloud2" id="Layer_2-3" data-name="Layer 2">
+                                    <g id="Layer_2-2-4" data-name="Layer 2-2">
+                                        <path class="cls-44"
+                                            d="M148.82,217.16a17.67,17.67,0,0,0-10.32-22.75,17.36,17.36,0,0,0-15.87,1.84,29.31,29.31,0,0,0-54.72,14.57v1.49a26.39,26.39,0,0,0,8.76,51.28h67.45a23.46,23.46,0,0,0,4.71-46.43Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                    </g>
+                                </g>
+                                <g id="cloud3" id="Layer_2-4" data-name="Layer 2">
+                                    <g id="Layer_2-2-5" data-name="Layer 2-2">
+                                        <path class="cls-44"
+                                            d="M213.38,196.19A17.67,17.67,0,0,0,197,172.31a17.44,17.44,0,0,0-9.77,3,29.31,29.31,0,0,0-54.72,14.57v1.49a26.39,26.39,0,0,0,8.76,51.28h67.45a23.46,23.46,0,0,0,4.71-46.43Z"
+                                            transform="translate(-49.27 -159.57)" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="col-6 h-100 text-center p-2  ">
+                            <div class=" text-white h-100 p-2 d-flex flex-column align-items-center">
+                                <div id="quizPlane" class="">
+                                    <div id="quiz-start-screen">
+                                        <p><a href="#" id="quiz-start-btn" class="quiz-button">Start Plane quiz!</a></p>
+                                    </div>
+                                    <div id="quiz-gameover-screen"
+                                        class="text-center h-100 flex-column align-items-center" style="display: flex;">
+                                        <div class="mt-auto mb-auto">
+                                            <h2 class="mb-4">Oops... Try Again!</h2>
+                                            <p><a class="pt-2 pb-2 pe-3 ps-3" href="#" id="quiz-retry-btn">Retry</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class=" text-center text-lg-start mt-auto">
+                        <div class="text-center p-2" style="font-size: 12px; background-color: rgb(231, 231, 231);">
+                            Copyright 2022 © Quizzy
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="dist/jquery.quiz-min.js"></script>
+    <script>
+        const bikeQuiz = [
+            {
+                //wheel
+                'q': 'What is this part? <p class="text-center mb-4"  ><img  height="130vh" src="images/bike svg/wheel.svg"></p>',
+                'options': [
+                    'Frame',
+                    'Handlebars',
+                    'Wheel',
+                    'Pedal'
+                ],
+                'correctIndex': 2,
+                'correctResponse': "You're correct!",
+                'incorrectResponse': 'Oops... Try again!'
+            },
+            {
+                //frame
+                'q': 'What is this part? <p class="text-center mb-4"><img  height="130vh" src="images/bike svg/frame.svg"></p>',
+                'options': [
+                    'Frame',
+                    'Seat',
+                    'Wheel',
+                    'Handlebars'
+                ],
+                'correctIndex': 0,
+                'correctResponse': "You're correct!",
+                'incorrectResponse': 'Oops... Try again!'
+            },
+            {
+                //seat
+                'q': 'What is this part? <p class="text-center mb-4"><img height="130vh" src="images/bike svg/seat.svg"></p>',
+                'options': [
+
+
+                    'Wheel',
+                    'Pedal', 'Frame', 'Seat',
+                ],
+                'correctIndex': 3,
+                'correctResponse': "You're correct!",
+                'incorrectResponse': 'Oops... Try again!'
+            },
+            {
+                //pedal
+                'q': 'What is this part? <p class="text-center mb-4"><img height="130vh" src="images/bike svg/pedal.svg"></p>',
+                'options': [
+                    'Handlebars',
+                    'Seat',
+                    'Pedal',
+                    'Frame',
+
+                ],
+                'correctIndex': 2,
+                'correctResponse': "You're correct!",
+                'incorrectResponse': 'Oops... Try again!'
+            },
+            {
+                //handle
+                'q': 'What is this part? <p class="text-center mb-4"><img height="130vh" src="images/bike svg/handle.svg"></p>',
+                'options': [
+                    'Frame',
+                    'Handlebars',
+                    'Pedal',
+                    'Seat',
+
+                ],
+                'correctIndex': 1,
+                'correctResponse': "You're correct!",
+                'incorrectResponse': 'Oops... Try again!'
+            },
+        ]
+
+        const planeQuiz = [
+            {
+                //body
+                'q': 'What is this part? <p class="text-center"><img height="200vh" src="images/plane/body.svg"></p>',
+                'options': [
+                    'Engine',
+                    'Body',
+                    'Wing',
+                    'Tail'
+                ],
+                'correctIndex': 1,
+                'correctResponse': "You're correct!",
+                'incorrectResponse': 'Oops... Try again!'
+            },
+            {
+                //engine
+                'q': 'What is this part? <p class="text-center"><img height="180vh" src="images/plane/engine.svg"></p>',
+                'options': [
+                    'Engine',
+                    'Tail',
+                    'Body',
+                    'Windsheild'
+                ],
+                'correctIndex': 0,
+                'correctResponse': "You're correct!",
+                'incorrectResponse': 'Oops... Try again!'
+            },
+            {
+                //tail
+                'q': 'What is this part? <p class="text-center"><img height="180vh" src="images/plane/tail.svg"></p>',
+                'options': [
+                    'Engine',
+                    'Body',
+                    'Windsheild',
+                    'Tail',
+                ],
+                'correctIndex': 3,
+                'correctResponse': "You're correct!",
+                'incorrectResponse': 'Oops... Try again!'
+            },
+            {
+                //windsheild
+                'q': 'What is this part? <p class="text-center"><img height="180vh" src="images/plane/windsheild.svg"></p>',
+                'options': [
+                    'Body',
+                    'Wing',
+                    'Engine',
+                    'Windsheild',
+
+                ],
+                'correctIndex': 3,
+                'correctResponse': "You're correct!",
+                'incorrectResponse': 'Oops... Try again!'
+            },
+            {
+                //wing
+                'q': 'What is this part? <p class="text-center"><img height="180vh" src="images/plane/wing.svg"></p>',
+                'options': [
+                    'Body',
+                    'Wing',
+                    'Engine',
+                    'Tail',
+
+                ],
+                'correctIndex': 1,
+                'correctResponse': "You're correct!",
+                'incorrectResponse': 'Oops... Try again!'
+            },
+        ]
+
+        $('#quizBike').quiz({
+            //resultsScreen: '#results-screen',
+
+            counter: true,
+            allowIncorrect: false,
+            //homeButton: '#custom-home',
+            counterFormat: 'Question %current of %total',
+            questions: bikeQuiz,
+        });
+
+        // $('#quizPlane').quiz({
+        //     //resultsScreen: '#results-screen',
+
+        //     counter: true,
+        //     allowIncorrect: false,
+        //     //homeButton: '#custom-home',
+        //     counterFormat: 'Question %current of %total',
+        //     questions: planeQuiz,
+        // });
+
+    </script>
+
+</body>
+
+</html>

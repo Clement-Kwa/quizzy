@@ -1,0 +1,305 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+
+}
+
+h1 h2 h3 h4 h5 h6 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3.8vw;
+}
+
+b {
+    font-weight: 500;
+}
+
+.welcomeBG {
+    background: linear-gradient(#36D1DC, #5B86E5);
+
+}
+
+.boxShadow {
+    box-shadow: 1px 12px 1px rgba(0, 0, 0, 0.24);
+}
+
+.bikeBG {
+    background: linear-gradient(-0.25turn, #AD74EF, #FCB89B);
+    transition: all 0.35s ease-in-out;
+}
+
+.bikeBG:hover {
+    transform: scale(1.05);
+}
+
+.planeBG {
+    background: linear-gradient(0.25turn, #588CE4, #36D0DC);
+    transition: all 0.35s ease-in-out;
+}
+
+.planeBG:hover {
+    transform: scale(1.05);
+}
+
+.rocketBG {
+    background: linear-gradient(0.25turn, #FF5F6D, #FFC371);
+    transition: all 0.35s ease-in-out;
+}
+
+.rocketBG:hover {
+    transform: scale(1.05);
+}
+
+.qnPill {
+    background: #39C8DC;
+}
+
+.exitPill {
+    background-color: #FF6A44;
+}
+
+.option1Pill {
+    background-color: #F7A101;
+}
+
+.option2Pill {
+    background-color: #25840B;
+}
+
+.option3Pill {
+    background-color: #005EC6;
+}
+
+.option4Pill {
+    background-color: #DA1A38;
+}
+
+.letsGoPill {
+    background-color: #00C985;
+    border: none;
+}
+
+.highlight {
+    color: #F1D626;
+}
+
+.pill {
+    border-radius: 10px;
+    height: 50px;
+}
+
+.roundedBorder {
+    border-radius: 20px;
+
+}
+
+.navbar-brand {
+    width: 7vw;
+    height: auto;
+}
+
+.bgWhite {
+    background-color: #ffffff;
+}
+
+
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.bgTest2 {
+    background-color: tomato;
+}
+
+.bgTest3 {
+    background-color: rgb(16, 146, 124);
+}
+
+.bgTest4 {
+    background-color: rgb(73, 192, 25);
+}
+
+.bgTest5 {
+    background-color: rgb(71, 197, 255);
+}
+
+
+
+/* 
+jquery quiz */
+
+.quiz-container a {
+    text-decoration: none;
+    color: #333;
+
+}
+
+.quiz-container {
+    height: 100%;
+
+}
+
+#quiz-counter, #quiz-header, #quiz-results-screen, #quiz-start-screen {
+    text-align: center
+}
+
+.question {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5em;
+
+}
+
+
+#quiz-counter {
+    font-size: .75em
+}
+
+.answers {
+
+    list-style: none;
+    padding: 0
+}
+
+li {
+    display: inline;
+}
+
+.answers a {
+    display: inline;
+    padding: .5em 1em;
+    margin: .5em;
+    background: #fff;
+    border-radius: 10px
+}
+
+.answers a.correct {
+    background: #090
+}
+
+.answers a.incorrect {
+    background: #c00
+}
+
+.answers a.correct, .answers a.incorrect {
+    color: #fff
+}
+
+#quiz-controls {
+    background: #333;
+    color: #fff;
+    padding: .5em 1em;
+    text-align: center;
+    border-radius: 10px
+}
+
+#quiz-results {
+    font-size: 1.25em
+}
+
+#quiz-buttons a, .quiz-container .quiz-button {
+    display: inline-block;
+    padding: .5em 1em;
+    background: #333;
+    color: #fff;
+    border-radius: 10px
+}
+
+#quiz-buttons a {
+    background: #fff;
+    color: #333
+}
+
+.quiz-results-state #quiz-controls {
+    background: 0 0;
+    padding: 0
+}
+
+.quiz-results-state #quiz-buttons a {
+    background: #333;
+    color: #fff
+}
+
+ul.answers {
+    text-align: center;
+}
+
+/* make container centered */
+#quizBike {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    background-color: #459bff;
+    border-radius: 5vh;
+    box-shadow: 1px 12px 1px rgba(0, 0, 0, 0.24);
+}
+
+/* try to position correct push it upwards */
+#quiz-controls {
+    position: absolute;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #00C985;
+    border-radius: 5vh;
+}
+
+#quiz-next-btn {
+    padding: auto;
+    text-align: center;
+    font-size: 2vh;
+}
+
+#quiz-buttons a #quiz-start-btn #quiz-retry-btn {
+    font-size: 2vh;
+    width: 30%;
+}
+
+#quiz-retry-btn {
+    background-color: black;
+    border-radius: 2vh;
+    color: white;
+    font-size: 2vh;
+}
+
+#quiz-start-btn {
+    background-color: #00C985;
+    border-radius: 2vh;
+    color: white;
+    font-size: 2vh;
+}
+
+#quiz-response {
+    font-size: 3vh;
+    padding: auto;
+    text-align: center;
+}
+
+#quiz-results {
+    margin-bottom: 16vh;
+}
+
+#quiz-gameover-screen {
+    background-color: #DA1A38;
+    border-radius: 5vh;
+}
+
+#rearWheel, #frontWheel, #frame, #cloud1, #cloud2, #cloud3, #plane {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+.statusIcon {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    z-index: 2;
+}
